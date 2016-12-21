@@ -1,0 +1,24 @@
+Couleurs: 
+
+	Jaune : #ffeb3b
+	Rouge (porte) : #932626
+
+	Vert (avatar): #6ab067
+	Rose (avatar): #e74d8d
+
+	Noir : #000000
+	Blanc : #ffffff
+
+Typos:
+
+Product Sans (titres):
+
+	HTML : <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+
+	CSS: font-family: 'Product Sans', Arial, sans-serif;
+
+Ubuntu (textes):
+
+	HTML : <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+	CSS : font-family: 'Ubuntu', sans-serif;
