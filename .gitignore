@@ -6,3 +6,4 @@
 *.iml
 
 .idea/web.iml
+*.xml
