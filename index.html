@@ -12,7 +12,27 @@
 </head>
 <body>
 
-<div class="polygon">
+<nav>
+    <span onclick=openNav();><a href=javascript:void(0)><img src="images_interface/logo.jpg"
+                                                             alt="Logo The Inside of MMI"></a></span>
+    <div id=mySidenav class=sidenav>
+        <div class="titremenu">
+            <img src="images_interface/logo.jpg" alt="Logo The Inside of MMI">
+            <h3>Menu</h3>
+            <a href=javascript:void(0) class=closebtn onclick=closeNav();>X</a>
+        </div>
+        <a href="#">Accueil</a>
+        <a href="#">Partager le site</a>
+        <a href="#">À Propos</a>
+
+        <div class="salles">
+            <a href="#">Salle 101 : Élodie Chartogne</a>
+            <a href="#">Salle 103 : David Malsot</a>
+        </div>
+    </div>
+</nav>
+
+<div class="polygon-accueil">
     <div class="contenu">
         <header>
             <h1>The inside of<br>MMI Montbéliard</h1>
@@ -41,50 +61,72 @@
             <div id="credits">
                 <div id="elo">
                     <img src="images_interface/avatar_er.png" alt="Avatar Elodie Roosz">
-                    <ul>
-                        <li>Élodie Roosz</li>
-
-                        <div class="logo">
-                            <ul>
-                                <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
-                                                     alt="Logo Facebook"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
-                                                     alt="Logo Twitter"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
-                                                     alt="Logo Instagram"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
-                                                     alt="Logo LinkedIn"></a></li>
-                            </ul>
-                        </div>
-
-                        <li><a href="www.elodieroosz.fr">www.elodieroosz.fr</a></li>
-                    </ul>
+                    <div class="liens">
+                        <p>Élodie Roosz</p>
+                        <ul class="logo">
+                            <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
+                                                 alt="Logo Facebook"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
+                                                 alt="Logo Twitter"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
+                                                 alt="Logo Instagram"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
+                                                 alt="Logo LinkedIn"></a></li>
+                        </ul>
+                        <p><a href="www.elodieroosz.fr">www.elodieroosz.fr</a></p>
+                    </div>
                 </div>
 
                 <div id="theo">
                     <img src="images_interface/avatar_tk.png" alt="Avatar Théo Koenig">
-                    <ul>
-                        <li>Théo Koenig</li>
+                    <div class="liens">
+                        <p>Théo Koenig</p>
 
-                        <div class="logo">
-                            <ul>
-                                <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
-                                                     alt="Logo Facebook"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
-                                                     alt="Logo Twitter"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
-                                                     alt="Logo Instagram"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
-                                                     alt="Logo LinkedIn"></a></li>
-                            </ul>
-                        </div>
+                        <ul class="logo">
+                            <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
+                                                 alt="Logo Facebook"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
+                                                 alt="Logo Twitter"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
+                                                 alt="Logo Instagram"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
+                                                 alt="Logo LinkedIn"></a></li>
+                        </ul>
 
-                        <li><a href="www.theokoenig.fr">www.theokoenig.fr</a></li>
-                    </ul>
+                        <p><a href="www.theokoenig.fr">www.theokoenig.fr</a></p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
 </div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+    /*(function(){
+     "use strict";
+
+     var contenu = document.querySelector(".polygon");
+     window.addEventListener("onclick", opacity);
+
+     function opacity(){
+     if (openNav()){
+     contenu.classList.add("opaque");
+     }
+     else if (closeNav()){
+     contenu.classList.remove("opaque");
+     }
+     }
+     }());*/
+</script>
+
 </body>
 </html>

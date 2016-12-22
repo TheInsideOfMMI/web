@@ -36,7 +36,8 @@ footer li{
     list-style-type: none;
 }
 
-#elo > ul > li:first-child, #theo > ul > li:first-child{
+#elo > .liens > p:first-child, #theo > .liens > p:first-child{
+    color: #ffeb3b;
     text-transform: uppercase;
     font-weight: bold;
 }
