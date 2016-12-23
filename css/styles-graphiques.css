@@ -83,6 +83,18 @@ body{
     background-repeat: no-repeat;
 }
 
+body.sallejaune{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../ressources/porte_jaune.svg");
+    background-color: #FDD835;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .polygon-accueil{
     top: 0;
     position: absolute;
@@ -91,12 +103,25 @@ body{
     width: 100%;
     height: 100%;
     background: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.polygon-salle{
+    top: 0;
+    position: absolute;
+    -webkit-clip-path: polygon(100% -260%, 10% 130%, 120% 100%);
+    clip-path: polygon(100% -260%, 10% 130%, 120% 100%);
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contenu{
     width: 550px;
     height: 100%;
-    float: right;
     padding-right: 120px;
     display: flex;
     flex-direction: column;
@@ -173,6 +198,58 @@ main > .bouton{
     width: 25px;
     height: auto;
 }
+
+/*----------------------------------------SALLES JAUNES-------------------------------*/
+
+.sallejaune header{
+    padding-bottom: 20px;
+}
+
+.polygon-salle > img{
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    padding-right: 100px;
+    align-self: center;
+}
+
+section {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+section > p:nth-child(2){
+    margin: 0 20px;
+}
+
+section > p{
+    margin: 0;
+}
+
+section > p > img{
+    border: #ffeb3b solid 5px;
+    width: 20px;
+}
+
+section > .quote:last-of-type{
+    align-self: flex-end;
+}
+
+.sallejaune footer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.sallejaune footer > a:first-child{
+    margin-right: 40px;
+}
+
+
+
+
 
 
 

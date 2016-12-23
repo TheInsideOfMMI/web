@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>The inside of MMI Montbéliard | Salle 101</title>
+    <link rel="stylesheet" href="css/styles-graphiques.css">
+    <link rel="stylesheet" href="css/typographies-couleur.css">
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images_interface/favicon.png"/>
+</head>
+<body class="sallejaune">
+
+<nav>
+    <span onclick=openNav();><a href=javascript:void(0)><img src="images_interface/logo.jpg"
+                                                             alt="Logo The Inside of MMI"></a></span>
+    <div id=mySidenav class=sidenav>
+        <div class="titremenu">
+            <img src="images_interface/logo.jpg" alt="Logo The Inside of MMI">
+            <h3>Menu</h3>
+            <a href=javascript:void(0) class=closebtn onclick=closeNav();>X</a>
+        </div>
+        <a href="#">Accueil</a>
+        <a href="#">Partager le site</a>
+        <a href="#">À Propos</a>
+
+        <div class="salles">
+            <a href="#">Salle 101 : Élodie Chartogne</a>
+            <a href="#">Salle 103 : David Malsot</a>
+        </div>
+    </div>
+</nav>
+
+<div class="polygon-salle">
+    <img src="images_interface/elodie.jpg" alt="Portrait">
+    
+    <div class="contenu">
+        <header>
+            <h1>Élodie Chartogne</h1>
+        </header>
+        
+        <main>
+            <section>
+                <p class="quote"><img src="images_interface/logo.jpg" alt="Quote"></p>
+                <p>Citation drôle et tendance actuelle</p>
+                <p class="quote"><img src="images_interface/logo.jpg" alt="Quote"></p>
+            </section>
+
+            <p>Présentation de sa fonction:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut beatae culpa cumque cupiditate earum fugiat id ipsam iusto laudantium libero magnam mollitia, nemo numquam omnis perferendis quibusdam recusandae sapiente.</p>
+
+            <p>Présentation de la personne:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis exercitationem illum laboriosam nemo, quaerat sequi vitae. Deleniti dignissimos, ea earum, ipsum libero nemo omnis pariatur perspiciatis quos, recusandae repellendus voluptatum.</p>
+        </main>
+
+        <footer class="bouton">
+                <a href="#">Porte précédente</a>
+
+                <a href="#">Porte suivante</a>
+        </footer>
+    </div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+    /*(function(){
+     "use strict";
+
+     var contenu = document.querySelector(".polygon");
+     window.addEventListener("onclick", opacity);
+
+     function opacity(){
+     if (openNav()){
+     contenu.classList.add("opaque");
+     }
+     else if (closeNav()){
+     contenu.classList.remove("opaque");
+     }
+     }
+     }());*/
+</script>
+
+</body>
+</html>

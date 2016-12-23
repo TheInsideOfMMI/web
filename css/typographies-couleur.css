@@ -41,3 +41,9 @@ footer li{
     text-transform: uppercase;
     font-weight: bold;
 }
+
+section > p{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 2em;
+}
