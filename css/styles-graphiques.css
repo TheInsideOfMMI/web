@@ -3,7 +3,76 @@ body, html{
     padding: 0;
 }
 
-header{
+/*------------------------------------MENU-----------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden; /* Désactive le scroll horizontal */
+    transition: 0.5s ease;
+    text-transform: uppercase;
+}
+
+.sidenav > a, .salles > a {
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EBE7E0;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidenav .salles{
+    padding-top: 40px;
+}
+
+.titremenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0 50px 0;
+}
+
+#mySidenav > .titremenu >  img{
+    width: 70px;
+    height: 70px;
+    border: #ffeb3b solid 3px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+nav > span > a > img{
+    width: 70px;
+    margin: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.opaque{
+    background-color: black;
+}
+
+/*------------------------------ACCUEIL--------------------------*/
+
+body{
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -14,23 +83,49 @@ header{
     background-repeat: no-repeat;
 }
 
-#accueil{
+body.sallejaune{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../ressources/porte_jaune.svg");
+    background-color: #FDD835;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.polygon-accueil{
+    top: 0;
     position: absolute;
     -webkit-clip-path: polygon(100% -200%, 30% 130%, 100% 100%);
     clip-path: polygon(100% -200%, 30% 130%, 100% 100%);
     width: 100%;
     height: 100%;
     background: black;
+    display: flex;
+    justify-content: flex-end;
 }
 
-#intro{
+.polygon-salle{
+    top: 0;
+    position: absolute;
+    -webkit-clip-path: polygon(100% -260%, 10% 130%, 120% 100%);
+    clip-path: polygon(100% -260%, 10% 130%, 120% 100%);
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenu{
     width: 550px;
-    float: right;
-    padding: 80px 120px 0 0;
-}
-
-#intro > h2{
-    padding-bottom: 30px;
+    height: 100%;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav{
@@ -38,29 +133,28 @@ nav{
     justify-content: space-between;
 }
 
-nav > a{
+main > .bouton{
+    padding: 30px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bouton > a{
     border: solid #ffeb3b 5px;
     padding: 15px 25px;
     transition: 0.2s ease-in-out;
 }
 
-nav > a:hover{
+.bouton > a:hover{
     color: black;
     background-color: #ffeb3b;
     transition: 0.2s ease-in-out;
 }
 
-#intro > p:nth-child(6){
-    padding-bottom: 30px;
-}
-
-#intro > p:last-of-type{
-    padding-top: 80px;
-}
-
 #credits{
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 #elo > img, #theo > img{
@@ -84,21 +178,77 @@ nav > a:hover{
     padding-left: 10px;
 }
 
-.logo > ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0;
+.liens{
+    padding-left: 8px;
+}
+
+.liens > p{
+    margin: 0;
 }
 
 .logo{
-    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0 0 0;
+    margin: 0;
 }
 
 .logo img{
     width: 25px;
     height: auto;
 }
+
+/*----------------------------------------SALLES JAUNES-------------------------------*/
+
+.sallejaune header{
+    padding-bottom: 20px;
+}
+
+.polygon-salle > img{
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    padding-right: 100px;
+    align-self: center;
+}
+
+section {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+section > p:nth-child(2){
+    margin: 0 20px;
+}
+
+section > p{
+    margin: 0;
+}
+
+section > p > img{
+    width: 50px;
+}
+
+section > .quote:last-of-type{
+    align-self: flex-end;
+}
+
+.sallejaune footer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.sallejaune footer > a:first-child{
+    margin-right: 40px;
+}
+
+
+
+
 
 
 

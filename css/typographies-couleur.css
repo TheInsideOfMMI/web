@@ -8,15 +8,11 @@ p{
     font-size: 0.9em;
 }
 
-#intro > h1{
+h1{
     font-size: 4em;
 }
 
-#intro > h2{
-    font-size: 3.5em;
-}
-
-#accueil p{
+p{
     color: white;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -26,7 +22,7 @@ a{
     font-family: 'Product Sans', Arial, sans-serif;
 }
 
-nav > a{
+.bouton > a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -34,13 +30,20 @@ nav > a{
 }
 
 
-#credits li{
+footer li{
     color: #ffeb3b;
     font-family: 'Ubuntu', sans-serif;
     list-style-type: none;
 }
 
-#elo > ul > li:first-child, #theo > ul > li:first-child{
+#elo > .liens > p:first-child, #theo > .liens > p:first-child{
+    color: #ffeb3b;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+section > p{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 2em;
 }

@@ -5,18 +5,40 @@
     <title>The inside of MMI Montbéliard | Accueil</title>
     <link rel="stylesheet" href="css/styles-graphiques.css">
     <link rel="stylesheet" href="css/typographies-couleur.css">
-    <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet'
+          type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images_interface/favicon.png" />
+    <link rel="icon" type="image/png" href="images_interface/favicon.png"/>
 </head>
 <body>
-<header>
-    <div id="accueil">
 
-        <div id="intro">
-            <h1>The inside of</h1>
-            <h2>MMI Montbéliard</h2>
+<nav>
+    <span onclick=openNav();><a href=javascript:void(0)><img src="images_interface/logo.jpg"
+                                                             alt="Logo The Inside of MMI"></a></span>
+    <div id=mySidenav class=sidenav>
+        <div class="titremenu">
+            <img src="images_interface/logo.jpg" alt="Logo The Inside of MMI">
+            <h3>Menu</h3>
+            <a href=javascript:void(0) class=closebtn onclick=closeNav();>X</a>
+        </div>
+        <a href="#">Accueil</a>
+        <a href="#">Partager le site</a>
+        <a href="#">À Propos</a>
 
+        <div class="salles">
+            <a href="#">Salle 101 : Élodie Chartogne</a>
+            <a href="#">Salle 103 : David Malsot</a>
+        </div>
+    </div>
+</nav>
+
+<div class="polygon-accueil">
+    <div class="contenu">
+        <header>
+            <h1>The inside of<br>MMI Montbéliard</h1>
+        </header>
+
+        <main>
             <p>Présentation MMI Montbéliard:</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto corporis cupiditate dolorum
                 hic, neque nihil provident rerum soluta veniam vero, vitae. Corporis, distinctio id nesciunt quasi
@@ -26,70 +48,85 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut beatae culpa dolores eligendi, itaque
                 magnam maxime, natus nisi officiis perferendis quo sed sequi ullam, unde veniam vitae. Ad, fugiat!</p>
 
-            <nav>
+            <div class="bouton">
 
-            <a href="#">Entrez à l'intérieur</a>
+                <a href="#">Entrez à l'intérieur</a>
 
-            <a href="#">Site officiel MMI Montbéliard</a>
+                <a href="#">Site officiel MMI Montbéliard</a>
+            </div>
+        </main>
 
-            </nav>
-
+        <footer>
             <p>Projet réalisé par Élodie Roosz & Théo Koenig, étudiants à MMI Montbéliard.</p>
-
-
             <div id="credits">
                 <div id="elo">
                     <img src="images_interface/avatar_er.png" alt="Avatar Elodie Roosz">
-                    <ul>
-                        <li>Élodie Roosz</li>
-
-                        <div class="logo">
-                            <ul>
-                        <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
-                                             alt="Logo Facebook"></a></li>
-                        <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
-                                             alt="Logo Twitter"></a></li>
-                        <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
-                                             alt="Logo Instagram"></a></li>
-                        <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
-                                             alt="Logo LinkedIn"></a></li>
-                            </ul>
-                        </div>
-
-                        <li><a href="www.elodieroosz.fr">www.elodieroosz.fr</a></li>
-                    </ul>
+                    <div class="liens">
+                        <p>Élodie Roosz</p>
+                        <ul class="logo">
+                            <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
+                                                 alt="Logo Facebook"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
+                                                 alt="Logo Twitter"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
+                                                 alt="Logo Instagram"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
+                                                 alt="Logo LinkedIn"></a></li>
+                        </ul>
+                        <p><a href="www.elodieroosz.fr">www.elodieroosz.fr</a></p>
+                    </div>
                 </div>
 
                 <div id="theo">
                     <img src="images_interface/avatar_tk.png" alt="Avatar Théo Koenig">
-                    <ul>
-                        <li>Théo Koenig</li>
+                    <div class="liens">
+                        <p>Théo Koenig</p>
 
-                        <div class="logo">
-                            <ul>
-                                <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
-                                                     alt="Logo Facebook"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
-                                                     alt="Logo Twitter"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
-                                                     alt="Logo Instagram"></a></li>
-                                <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
-                                                     alt="Logo LinkedIn"></a></li>
-                            </ul>
-                        </div>
+                        <ul class="logo">
+                            <li><a href="#"><img src="images_interface/social_icons/facebook-logo-button.png"
+                                                 alt="Logo Facebook"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/twitter-logo-button.png"
+                                                 alt="Logo Twitter"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/instagram-logo.png"
+                                                 alt="Logo Instagram"></a></li>
+                            <li><a href="#"><img src="images_interface/social_icons/linkedin-logo-button.png"
+                                                 alt="Logo LinkedIn"></a></li>
+                        </ul>
 
-                        <li><a href="www.theokoenig.fr">www.theokoenig.fr</a></li>
-                    </ul>
+                        <p><a href="www.theokoenig.fr">www.theokoenig.fr</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
-</header>
+</div>
 
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
 
-<footer>
+    /*(function(){
+     "use strict";
 
-</footer>
+     var contenu = document.querySelector(".polygon");
+     window.addEventListener("onclick", opacity);
+
+     function opacity(){
+     if (openNav()){
+     contenu.classList.add("opaque");
+     }
+     else if (closeNav()){
+     contenu.classList.remove("opaque");
+     }
+     }
+     }());*/
+</script>
 
 </body>
 </html>
