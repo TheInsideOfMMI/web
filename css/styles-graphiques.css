@@ -88,8 +88,20 @@ body.sallejaune{
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url("../ressources/porte_jaune.svg");
+    background-image: url("../images_interface/porte_jaune.svg");
     background-color: #FDD835;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body.sallerouge{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../images_interface/porte_rouge.svg");
+    background-color: #932626;
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -201,7 +213,7 @@ main > .bouton{
 
 /*----------------------------------------SALLES JAUNES-------------------------------*/
 
-.sallejaune header{
+.salle header{
     padding-bottom: 20px;
 }
 
@@ -235,16 +247,40 @@ section > .quote:last-of-type{
     align-self: flex-end;
 }
 
-.sallejaune footer{
+.salle footer{
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding-top: 80px;
 }
 
-.sallejaune footer > a:first-child{
+.salle footer > a:first-child{
     margin-right: 40px;
 }
+
+/*------------------------APROPOS----------------------------------------------------*/
+
+#apropos > main > .bouton{
+    padding-bottom: 50px;
+}
+
+#apropos > main > .bouton > a{
+    padding: 15px 170px;
+}
+
+/*----------------------------------SALLE ROUGE-----------------------------------------*/
+
+.sallerouge .bouton > a{
+    color: #D32F2F;
+    border: solid #D32F2F 5px;
+}
+
+
+.sallerouge .bouton > a:hover{
+    color: black;
+    background-color: #D32F2F;
+}
+
 
 
 
