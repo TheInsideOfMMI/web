@@ -156,7 +156,7 @@ main > .bouton{
 }
 
 .bouton > a{
-    border: solid #ffeb3b 5px;
+    border: solid #ffeb3b 4px;
     padding: 15px 25px;
     transition: 0.2s ease-in-out;
 }
@@ -276,7 +276,7 @@ section > .quote:last-of-type{
 
 .sallerouge .bouton > a{
     color: #D32F2F;
-    border: solid #D32F2F 5px;
+    border: solid #D32F2F 4px;
 }
 
 
