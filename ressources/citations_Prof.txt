@@ -1,12 +1,12 @@
--Elodie: J'ai pas les clés
--David: Mouais, Du balai!, C'est qui ?
--Mourad: C'est ma dernière année, Pour ceux qui comprennent pas...ce serait bien que vous compreniez., 
--Xavier: C'est pas très pertinent, Oui
--Chaton: Bonjour aussi, Ne vous levez pas
--Augier: J'ai une vie sociale moi, 
+-XElodie: J'ai pas les clés
+-XDavid: Mouais, Du balai!, C'est qui ?
+-XMourad: C'est ma dernière année, Pour ceux qui comprennent pas...ce serait bien que vous compreniez. (secret: )
+-XXavier: C'est pas très pertinent, Oui (secret: adore le vert)
+-XChaton: Bonjour aussi, Ne vous levez pas (secret:  )
+-XAugier: J'ai une vie sociale moi, 
 -Henriet: 
 -Annie: Bonjour!
--Mabed: Y'a encore une faute dans le TP ?
+-xMabed: Y'a encore une faute dans le TP ?
 -Julie: 
 -Alain: Je caricature, 
 -Fino: Vous prenez votre café en intraveineuse, Coup de pied à la lune, Mawashigeri, On repeint pas un plafond avec un marteau, Le TP est facile vous verrez, En 5 min vous faites le TP, Ca va être rock'n'roll
