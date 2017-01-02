@@ -2,8 +2,12 @@ Couleurs:
 
 	Jaune : #ffeb3b
 	Jaune porte :#FDD835
+
 	Rouge : #D32F2F
 	Rouge porte : #932626
+
+	Bleu : #2196F3
+	Bleu porte : #49728E
 
 	Vert (avatar): #6ab067
 	Rose (avatar): #e74d8d
