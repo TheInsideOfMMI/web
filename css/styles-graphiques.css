@@ -30,6 +30,14 @@ body, html{
     padding-top: 40px;
 }
 
+nav > .sidenav > .salles > ul{
+    padding-left: 0;
+}
+
+nav > .sidenav > .salles > ul > li{
+    padding: 8px 20px 8px 20px;
+}
+
 .titremenu{
     display: flex;
     flex-direction: row;
@@ -74,42 +82,81 @@ nav > span > a > img{
     background-color: black;
 }
 
-/*------------------------------ACCUEIL--------------------------*/
+/*------------------------------SALLES--------------------------*/
 
 body{
     height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
+}
+
+.mmi{
     background-image: url("../images_interface/fond_entree_mmi.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-body.sallejaune{
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-image: url("../images_interface/porte_jaune.svg");
-    background-color: #FDD835;
+body.salle{
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-body.sallerouge{
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-image: url("../images_interface/porte_rouge.svg");
-    background-color: #932626;
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
+body.sallejaune{
+    background-color: #FDD835;
 }
+
+body.sallerouge{
+    background-color: #932626;
+}
+
+body.sallebleu{
+    background-color: #49728E;
+}
+
+#salle001{
+    background-image: url("../images_interface/portes/secretariat.svg");
+}
+
+#salle102{
+    background-image: url("../images_interface/portes/102.svg");
+}
+
+#salle103{
+    background-image: url("../images_interface/portes/103.svg");
+}
+
+#salle104{
+    background-image: url("../images_interface/portes/104.svg");
+}
+
+#salle105{
+    background-image: url("../images_interface/portes/105.svg");
+}
+
+#salle106{
+    background-image: url("../images_interface/portes/106.svg");
+}
+
+#salle201{
+    background-image: url("../images_interface/portes/201.svg");
+}
+
+#salle203{
+    background-image: url("../images_interface/portes/203.svg");
+}
+
+#salle204{
+    background-image: url("../images_interface/portes/204.svg");
+}
+
+#salle210{
+    background-image: url("../images_interface/portes/210.svg");
+}
+
+/*------------------------------------POLYGON--------------------------------*/
 
 .polygon-accueil{
     top: 0;
@@ -215,7 +262,7 @@ main > .bouton{
     height: auto;
 }
 
-/*----------------------------------------SALLES JAUNES-------------------------------*/
+/*----------------------------------------SALLES-------------------------------*/
 
 .salle header{
     padding-bottom: 20px;
@@ -224,7 +271,7 @@ main > .bouton{
 .polygon-salle > img{
     max-width: 500px;
     max-height: 500px;
-    width: auto;
+    width: 500px;
     height: auto;
     padding-right: 100px;
     align-self: center;
@@ -272,7 +319,7 @@ section > .quote:last-of-type{
     padding: 15px 170px;
 }
 
-/*----------------------------------SALLE ROUGE-----------------------------------------*/
+/*----------------------------------SALLES ROUGE-----------------------------------------*/
 
 .sallerouge .bouton > a{
     color: #D32F2F;
@@ -283,6 +330,18 @@ section > .quote:last-of-type{
 .sallerouge .bouton > a:hover{
     color: black;
     background-color: #D32F2F;
+}
+
+/*----------------------------------SALLES BLEU-------------------------------------------*/
+.sallebleu .bouton > a{
+    color: #2196f3;
+    border: solid #2196f3 4px;
+}
+
+
+.sallebleu .bouton > a:hover{
+    color: black;
+    background-color: #2196f3;
 }
 
 

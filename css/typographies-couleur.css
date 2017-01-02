@@ -22,8 +22,28 @@ a{
     font-family: 'Product Sans', Arial, sans-serif;
 }
 
-.sallerouge h1, .sallerouge h2, .sallerouge > footer li{
+nav > .sidenav > .salles > ul > li > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav > .sidenav > .salles > p{
+    font-family: 'Product Sans', Arial, sans-serif;
+    color: #ffeb3b;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+/*-----------------------------COULEURS SALLES------------------------------------------*/
+
+.sallerouge h1, .sallerouge h2, .sallerouge > footer li, .sallerouge main h3{
     color: #D32F2F;
+}
+
+.sallebleu h1, .sallebleu h2, .sallebleu > footer li, .sallebleu main h3{
+    color: #2196f3;
 }
 
 .bouton > a{
@@ -40,7 +60,7 @@ footer li{
     list-style-type: none;
 }
 
-#elo > .liens > p:first-child, #theo > .liens > p:first-child{
+#elo > .liens > p, #theo > .liens > p{
     color: #ffeb3b;
     text-transform: uppercase;
     font-weight: bold;
@@ -54,8 +74,4 @@ section > p{
 
 main h3{
     font-weight: normal;
-}
-
-.sallerouge main h3{
-    color: #D32F2F;
 }
