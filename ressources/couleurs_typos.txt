@@ -9,6 +9,9 @@ Couleurs:
 	Bleu : #2196F3
 	Bleu porte : #49728E
 
+	Gris : #BDBDBD
+	Gris porte : #54595B
+
 	Vert (avatar): #6ab067
 	Rose (avatar): #e74d8d
 
