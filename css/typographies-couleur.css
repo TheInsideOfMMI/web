@@ -46,6 +46,10 @@ nav > .sidenav > .salles > p{
     color: #2196f3;
 }
 
+.sallebleu h1, .sallebleu h2, .sallebleu > footer li, .sallebleu main h3{
+    color: #BDBDBD;
+}
+
 .bouton > a{
     text-decoration: none;
     text-transform: uppercase;

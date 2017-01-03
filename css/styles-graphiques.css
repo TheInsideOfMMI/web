@@ -116,8 +116,20 @@ body.sallebleu{
     background-color: #49728E;
 }
 
-#salle001{
+body.sallegrise{
+    background-color: #54595B;
+}
+
+#secretariat{
     background-image: url("../images_interface/portes/secretariat.svg");
+}
+
+#direction{
+    background-image: url("../images_interface/portes/direction.svg");
+}
+
+#entretien{
+    background-image: url("../images_interface/portes/local.svg");
 }
 
 #salle102{
@@ -342,6 +354,19 @@ section > .quote:last-of-type{
 .sallebleu .bouton > a:hover{
     color: black;
     background-color: #2196f3;
+}
+
+/*--------------------------------------SALLES GRISES--------------------------------------------*/
+
+.sallebleu .bouton > a{
+    color: #BDBDBD;
+    border: solid #BDBDBD 4px;
+}
+
+
+.sallebleu .bouton > a:hover{
+    color: black;
+    background-color: #BDBDBD;
 }
 
 
