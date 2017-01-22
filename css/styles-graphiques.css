@@ -74,6 +74,12 @@ nav > span > a > img {
     margin: 20px;
 }
 
+@media (max-width: 1000px) {
+    nav > span > a > img {
+        margin: 0;
+    }
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 450px) {
@@ -161,7 +167,7 @@ body.sallegrise {
 }
 
 @media (max-width: 1000px) {
-    .salle, .mmi {
+    .salle {
         background-size: auto;
         background-position-y: -160px !important;
     }
@@ -171,17 +177,23 @@ body.sallegrise {
         background-position-x: 230px !important;
         background-size: contain !important;
     }
+
+    .mmi{
+        background-size: auto 40%;
+        background-position-y: -90px !important;
+        background-position-x: -70px !important;
+    }
 }
 
 @media (max-width: 650px) {
-    .salle, .mmi {
+    .salle {
         background-size: cover !important;
         background-position-x: -240px !important;
     }
 
     #entretien {
-        background-position-x: 50px !important;
-        background-position-y: -150px !important;
+        background-position-x: 20px !important;
+        background-position-y: -125px !important;
     }
 }
 
@@ -314,6 +326,9 @@ body.sallegrise {
         justify-content: flex-end;
         margin: 0 auto;
     }
+    .mmi .contenu{
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -325,6 +340,16 @@ body.sallegrise {
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-width: 1000px){
+    nav{
+        height: 60px;
+    }
+
+    .mmi nav{
+        height: 300px;
+    }
 }
 
 main > .bouton {
@@ -364,6 +389,22 @@ main > .bouton {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+}
+
+@media(max-width: 1000px){
+    .mmi .bouton{
+        padding-bottom: 40px;
+    }
+
+    #credits{
+        flex-direction: column;
+    }
+    #theo{
+        margin-bottom: 20px;
+    }
+    #elo, #theo{
+        justify-content: center;
+    }
 }
 
 #elo > img, #theo > img {
@@ -475,6 +516,12 @@ section > p > img {
     width: 50px;
 }
 
+@media(max-width: 1000px){
+    section > p > img{
+        width: 30px;
+    }
+}
+
 section > .quote:last-of-type {
     align-self: flex-end;
 }
@@ -516,6 +563,15 @@ section > .quote:last-of-type {
 
 #apropos > main > .bouton > a {
     padding: 15px 170px;
+}
+
+@media (max-width: 1000px) {
+    #apropos > main > .bouton > a{
+        padding: 15px 0;
+    }
+    #apropos > main > .bouton{
+        padding-bottom: 20px;
+    }
 }
 
 /*----------------------------------SALLES ROUGE-----------------------------------------*/

@@ -14,7 +14,7 @@ h1{
 
 @media(max-width: 1000px){
     h1{
-        font-size: 3.2em;
+        font-size: 3em;
     }
 }
 
@@ -84,7 +84,7 @@ section > p{
 
 @media(max-width: 1000px){
     section > p{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
