@@ -99,10 +99,15 @@ nav > span > a > img {
 /*------------------------------SALLES--------------------------*/
 
 body {
-    /*height: 100vh;*/
     width: 100%;
     overflow: hidden;
     position: relative;
+}
+
+@media(min-width: 1000px){
+    body{
+        height: 100vh;
+    }
 }
 
 .mmi {
@@ -168,13 +173,13 @@ body.sallegrise {
 
 @media (max-width: 1000px) {
     .salle {
-        background-size: auto;
-        background-position-y: -160px !important;
+        background-size: 400px !important;
+        background-position-y: -96px !important;
+        background-position-x: center !important;
     }
 
     #entretien {
-        background-position-y: -140px !important;
-        background-position-x: 230px !important;
+        background-position-y: -157px !important;
         background-size: contain !important;
     }
 
@@ -187,12 +192,10 @@ body.sallegrise {
 
 @media (max-width: 650px) {
     .salle {
-        background-size: cover !important;
-        background-position-x: -240px !important;
+        background-size: 400px !important;
     }
 
     #entretien {
-        background-position-x: 20px !important;
         background-position-y: -125px !important;
     }
 }
@@ -274,6 +277,10 @@ body.sallegrise {
 }
 
 @media (max-width: 1000px) {
+    .polygon-salle{
+        height: 100vh;
+        padding-bottom: 80px;
+    }
     .polygon-salle, .polygon-accueil {
         -webkit-clip-path: none;
         clip-path: none;
@@ -362,6 +369,12 @@ main > .bouton {
     border: solid #ffeb3b 4px;
     padding: 15px 25px;
     transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 515px) {
+    .polygon-salle .bouton > a{
+        height: 40px;
+    }
 }
 
 @media(max-width: 620px){
@@ -483,7 +496,7 @@ main > .bouton {
     .polygon-salle > img {
         width: 200px;
         height: 200px;
-        padding: 0 0 50px 0;
+        padding: 50px 0 50px 0;
     }
 }
 
