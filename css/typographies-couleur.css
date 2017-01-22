@@ -12,6 +12,12 @@ h1{
     font-size: 4em;
 }
 
+@media(max-width: 1000px){
+    h1{
+        font-size: 3.2em;
+    }
+}
+
 p{
     color: white;
     font-family: 'Ubuntu', sans-serif;
@@ -46,7 +52,7 @@ nav > .sidenav > .salles > p{
     color: #2196f3;
 }
 
-.sallebleu h1, .sallebleu h2, .sallebleu > footer li, .sallebleu main h3{
+.sallegrise h1, .sallegrise h2, .sallegrise > footer li, .sallegrise main h3{
     color: #BDBDBD;
 }
 
@@ -74,6 +80,12 @@ section > p{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
     font-size: 2em;
+}
+
+@media(max-width: 1000px){
+    section > p{
+        font-size: 1.5em;
+    }
 }
 
 main h3{

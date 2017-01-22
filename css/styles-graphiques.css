@@ -3,7 +3,6 @@ body, html {
     padding: 0;
 }
 
-
 /*------------------------------------MENU-----------------------------------------------*/
 
 .sidenav {
@@ -20,7 +19,7 @@ body, html {
     text-transform: uppercase;
 }
 
-.sidenav>a, .salles>a {
+.sidenav > a, .salles > a {
     padding: 8px 20px 8px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -33,11 +32,11 @@ body, html {
     padding-top: 40px;
 }
 
-nav>.sidenav>.salles>ul {
+nav > .sidenav > .salles > ul {
     padding-left: 0;
 }
 
-nav>.sidenav>.salles>ul>li {
+nav > .sidenav > .salles > ul > li {
     padding: 8px 20px 8px 20px;
 }
 
@@ -49,16 +48,15 @@ nav>.sidenav>.salles>ul>li {
     padding: 25px 0 50px 0;
 }
 
-#mySidenav>.titremenu>img {
+#mySidenav > .titremenu > img {
     width: 70px;
     height: 70px;
     border: #ffeb3b solid 3px;
 }
 
-.titremenu>a {
+.titremenu > a {
     display: flex;
 }
-
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
@@ -67,11 +65,10 @@ nav>.sidenav>.salles>ul>li {
     padding: 20px;
 }
 
-nav>span>a>img {
+nav > span > a > img {
     width: 60px;
     margin: 20px;
 }
-
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
@@ -79,6 +76,7 @@ nav>span>a>img {
     .sidenav {
         padding-top: 15px;
     }
+
     .sidenav a {
         font-size: 18px;
     }
@@ -87,7 +85,6 @@ nav>span>a>img {
 .opaque {
     background-color: black;
 }
-
 
 /*------------------------------SALLES--------------------------*/
 
@@ -139,11 +136,49 @@ body.sallegrise {
     background-image: url("../images_interface/portes/local.svg");
 }
 
-@media(max-width: 1000px){
-  .salle{
-    background-position: top !important;
-    background-size: contain !important;
-  }
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .salle, .mmi {
+        background-position-x: -80px !important;
+    }
+
+    #entretien {
+        background-position-x: 10px !important;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .salle, .mmi {
+        background-position-x: -110px !important;
+    }
+
+    #entretien {
+        background-position-x: 0 !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .salle, .mmi {
+        background-size: auto;
+        background-position-y: -160px !important;
+    }
+
+    #entretien {
+        background-position-y: -140px !important;
+        background-position-x: 230px !important;
+        background-size: contain !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .salle, .mmi {
+        background-size: cover !important;
+        background-position-x: -150px !important;
+    }
+
+    #entretien {
+        background-position-x: 50px !important;
+        background-position-y: -150px !important;
+    }
 }
 
 #salle102 {
@@ -182,7 +217,6 @@ body.sallegrise {
     background-image: url("../images_interface/portes/210.svg");
 }
 
-
 /*------------------------------------POLYGON--------------------------------*/
 
 .polygon-accueil {
@@ -209,11 +243,41 @@ body.sallegrise {
     justify-content: flex-end;
 }
 
-@media(max-width: 1000px) {
-    .polygon-salle {
-        -webkit-clip-path: polygon(100% 30%, -600% 100%, 100% 100%);
-        clip-path: polygon(100% 30%, -600% 100%, 100% 100%);
+@media(min-width: 1200px) and (max-width: 1400px){
+    .polygon-accueil{
+        -webkit-clip-path: polygon(100% -320%, 30% 130%, 100% 100%);
+        clip-path: polygon(100% -320%, 30% 130%, 100% 100%);
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1200px){
+    .polygon-accueil{
+        -webkit-clip-path: polygon(100% -500%, 30% 130%, 100% 100%);
+        clip-path: polygon(100% -500%, 30% 130%, 100% 100%);
+    }
+}
+
+@media (max-width: 1000px) {
+    .polygon-salle, .polygon-accueil {
+        -webkit-clip-path: none;
+        clip-path: none;
         position: relative;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .polygon-salle {
+        -webkit-clip-path: polygon(130% -260%, 10% 130%, 120% 100%);
+        clip-path: polygon(130% -260%, 10% 130%, 120% 100%);
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .polygon-salle, .polygon-accueil {
+        justify-content: center;
     }
 }
 
@@ -226,8 +290,20 @@ body.sallegrise {
     justify-content: center;
 }
 
-@media(max-width: 1000px){
-    .contenu{
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .contenu {
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .contenu {
+        padding: 0 50px 50px 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contenu {
         width: 80%;
         height: auto;
         padding: 0 0 200px 0;
@@ -236,24 +312,45 @@ body.sallegrise {
     }
 }
 
+@media (max-width: 650px) {
+    .contenu {
+        padding: 0 0 150px 0;
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
 }
 
-main>.bouton {
+main > .bouton {
     padding: 30px 0 80px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.bouton>a {
+.bouton > a {
     border: solid #ffeb3b 4px;
     padding: 15px 25px;
     transition: 0.2s ease-in-out;
 }
 
-.bouton>a:hover {
+@media(max-width: 620px){
+    .mmi .bouton{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mmi .bouton > a{
+        width: 250px;
+        text-align: center;
+    }
+
+    .mmi .bouton > a:first-child{
+        margin-bottom: 20px;
+    }
+}
+
+.bouton > a:hover {
     color: black;
     background-color: #ffeb3b;
     transition: 0.2s ease-in-out;
@@ -265,12 +362,12 @@ main>.bouton {
     padding-top: 20px;
 }
 
-#elo>img, #theo>img {
+#elo > img, #theo > img {
     width: 80px;
     height: auto;
 }
 
-#theo>img {
+#theo > img {
     border: #6ab067 solid 2px;
     border-radius: 50%;
 }
@@ -280,7 +377,7 @@ main>.bouton {
     align-items: center;
 }
 
-#elo>ul, #theo>ul {
+#elo > ul, #theo > ul {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
@@ -290,7 +387,7 @@ main>.bouton {
     padding-left: 8px;
 }
 
-.liens>p {
+.liens > p {
     margin: 0;
 }
 
@@ -307,14 +404,13 @@ main>.bouton {
     height: auto;
 }
 
-
 /*----------------------------------------SALLES-------------------------------*/
 
 .salle header {
     padding-bottom: 20px;
 }
 
-.polygon-salle>img {
+.polygon-salle > img {
     max-width: 500px;
     max-height: 500px;
     width: 500px;
@@ -323,12 +419,32 @@ main>.bouton {
     align-self: center;
 }
 
-@media(max-width: 1000px){
-    .polygon-salle>img{
-        width: 400px;
-        height: 400px;
-        padding-bottom: 100px;
-        position: absolute;
+@media (min-width: 1000px) and (max-width: 1600px) {
+    .polygon-salle > img {
+        padding-right: 50px;
+        max-width: 300px;
+        max-height: 300px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .polygon-salle > img {
+        padding: 50px 0 0 250px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .polygon-salle > img {
+        width: 200px;
+        height: 200px;
+        padding: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .polygon-salle > img {
+        padding: 0 0 20px 0;
     }
 }
 
@@ -337,19 +453,25 @@ section {
     padding-bottom: 40px;
 }
 
-section>p:nth-child(2) {
+@media (max-width: 1000px) {
+    section {
+        padding-bottom: 20px;
+    }
+}
+
+section > p:nth-child(2) {
     margin: 0 20px;
 }
 
-section>p {
+section > p {
     margin: 0;
 }
 
-section>p>img {
+section > p > img {
     width: 50px;
 }
 
-section>.quote:last-of-type {
+section > .quote:last-of-type {
     align-self: flex-end;
 }
 
@@ -360,56 +482,70 @@ section>.quote:last-of-type {
     padding-top: 80px;
 }
 
-.salle footer>a:first-child {
+@media (max-width: 1000px) {
+    .salle footer {
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .salle footer {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .salle footer {
+        padding-top: 40px;
+    }
+}
+
+.salle footer > a:first-child {
     margin-right: 40px;
 }
 
-
 /*------------------------APROPOS----------------------------------------------------*/
 
-#apropos>main>.bouton {
+#apropos > main > .bouton {
     padding-bottom: 50px;
 }
 
-#apropos>main>.bouton>a {
+#apropos > main > .bouton > a {
     padding: 15px 170px;
 }
 
-
 /*----------------------------------SALLES ROUGE-----------------------------------------*/
 
-.sallerouge .bouton>a {
+.sallerouge .bouton > a {
     color: #D32F2F;
     border: solid #D32F2F 4px;
 }
 
-.sallerouge .bouton>a:hover {
+.sallerouge .bouton > a:hover {
     color: black;
     background-color: #D32F2F;
 }
 
-
 /*----------------------------------SALLES BLEU-------------------------------------------*/
 
-.sallebleu .bouton>a {
+.sallebleu .bouton > a {
     color: #2196f3;
     border: solid #2196f3 4px;
 }
 
-.sallebleu .bouton>a:hover {
+.sallebleu .bouton > a:hover {
     color: black;
     background-color: #2196f3;
 }
 
-
 /*--------------------------------------SALLES GRISES--------------------------------------------*/
 
-.sallebleu .bouton>a {
+.sallegrise .bouton > a {
     color: #BDBDBD;
     border: solid #BDBDBD 4px;
 }
 
-.sallebleu .bouton>a:hover {
+.sallegrise .bouton > a:hover {
     color: black;
     background-color: #BDBDBD;
 }
