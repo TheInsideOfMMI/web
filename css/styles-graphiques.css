@@ -1,9 +1,11 @@
-body, html{
+body, html {
     margin: 0;
     padding: 0;
 }
 
+
 /*------------------------------------MENU-----------------------------------------------*/
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -12,12 +14,13 @@ body, html{
     top: 0;
     left: 0;
     background-color: black;
-    overflow-x: hidden; /* Désactive le scroll horizontal */
+    overflow-x: hidden;
+    /* Désactive le scroll horizontal */
     transition: 0.5s ease;
     text-transform: uppercase;
 }
 
-.sidenav > a, .salles > a {
+.sidenav>a, .salles>a {
     padding: 8px 20px 8px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -26,19 +29,19 @@ body, html{
     transition: 0.3s ease;
 }
 
-.sidenav .salles{
+.sidenav .salles {
     padding-top: 40px;
 }
 
-nav > .sidenav > .salles > ul{
+nav>.sidenav>.salles>ul {
     padding-left: 0;
 }
 
-nav > .sidenav > .salles > ul > li{
+nav>.sidenav>.salles>ul>li {
     padding: 8px 20px 8px 20px;
 }
 
-.titremenu{
+.titremenu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -46,131 +49,143 @@ nav > .sidenav > .salles > ul > li{
     padding: 25px 0 50px 0;
 }
 
-#mySidenav > .titremenu >  img{
+#mySidenav>.titremenu>img {
     width: 70px;
     height: 70px;
     border: #ffeb3b solid 3px;
 }
 
-.titremenu > a{
+.titremenu>a {
     display: flex;
 }
 
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
     transition: margin-left .5s;
     padding: 20px;
 }
 
-nav > span > a > img{
+nav>span>a>img {
     width: 60px;
     margin: 20px;
 }
 
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
-
     .sidenav a {
         font-size: 18px;
     }
 }
 
-.opaque{
+.opaque {
     background-color: black;
 }
 
+
 /*------------------------------SALLES--------------------------*/
 
-body{
+body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.mmi{
+.mmi {
     background-image: url("../images_interface/fond_entree_mmi.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-body.salle{
+body.salle {
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-body.sallejaune{
+body.sallejaune {
     background-color: #FDD835;
 }
 
-body.sallerouge{
+body.sallerouge {
     background-color: #932626;
 }
 
-body.sallebleu{
+body.sallebleu {
     background-color: #49728E;
 }
 
-body.sallegrise{
+body.sallegrise {
     background-color: #54595B;
 }
 
-#secretariat{
+#secretariat {
     background-image: url("../images_interface/portes/secretariat.svg");
 }
 
-#direction{
+#direction {
     background-image: url("../images_interface/portes/direction.svg");
 }
 
-#entretien{
+#entretien {
     background-image: url("../images_interface/portes/local.svg");
 }
 
-#salle102{
+@media(max-width: 1000px){
+  .salle{
+    background-position: top !important;
+    background-size: contain !important;
+  }
+}
+
+#salle102 {
     background-image: url("../images_interface/portes/102.svg");
 }
 
-#salle103{
+#salle103 {
     background-image: url("../images_interface/portes/103.svg");
 }
 
-#salle104{
+#salle104 {
     background-image: url("../images_interface/portes/104.svg");
 }
 
-#salle105{
+#salle105 {
     background-image: url("../images_interface/portes/105.svg");
 }
 
-#salle106{
+#salle106 {
     background-image: url("../images_interface/portes/106.svg");
 }
 
-#salle201{
+#salle201 {
     background-image: url("../images_interface/portes/201.svg");
 }
 
-#salle203{
+#salle203 {
     background-image: url("../images_interface/portes/203.svg");
 }
 
-#salle204{
+#salle204 {
     background-image: url("../images_interface/portes/204.svg");
 }
 
-#salle210{
+#salle210 {
     background-image: url("../images_interface/portes/210.svg");
 }
 
+
 /*------------------------------------POLYGON--------------------------------*/
 
-.polygon-accueil{
+.polygon-accueil {
     top: 0;
     position: absolute;
     -webkit-clip-path: polygon(100% -200%, 30% 130%, 100% 100%);
@@ -182,7 +197,7 @@ body.sallegrise{
     justify-content: flex-end;
 }
 
-.polygon-salle{
+.polygon-salle {
     top: 0;
     position: absolute;
     -webkit-clip-path: polygon(100% -260%, 10% 130%, 120% 100%);
@@ -194,7 +209,15 @@ body.sallegrise{
     justify-content: flex-end;
 }
 
-.contenu{
+@media(max-width: 1000px) {
+    .polygon-salle {
+        -webkit-clip-path: polygon(100% 30%, -600% 100%, 100% 100%);
+        clip-path: polygon(100% 30%, -600% 100%, 100% 100%);
+        position: relative;
+    }
+}
+
+.contenu {
     width: 550px;
     height: 100%;
     padding-right: 120px;
@@ -203,65 +226,75 @@ body.sallegrise{
     justify-content: center;
 }
 
-nav{
+@media(max-width: 1000px){
+    .contenu{
+        width: 80%;
+        height: auto;
+        padding: 0 0 200px 0;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+}
+
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-main > .bouton{
+main>.bouton {
     padding: 30px 0 80px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.bouton > a{
+.bouton>a {
     border: solid #ffeb3b 4px;
     padding: 15px 25px;
     transition: 0.2s ease-in-out;
 }
 
-.bouton > a:hover{
+.bouton>a:hover {
     color: black;
     background-color: #ffeb3b;
     transition: 0.2s ease-in-out;
 }
 
-#credits{
+#credits {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
 }
 
-#elo > img, #theo > img{
+#elo>img, #theo>img {
     width: 80px;
     height: auto;
 }
 
-#theo > img{
+#theo>img {
     border: #6ab067 solid 2px;
     border-radius: 50%;
 }
 
-#elo, #theo{
+#elo, #theo {
     display: flex;
     align-items: center;
 }
 
-#elo > ul, #theo > ul{
+#elo>ul, #theo>ul {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
 
-.liens{
+.liens {
     padding-left: 8px;
 }
 
-.liens > p{
+.liens>p {
     margin: 0;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -269,18 +302,19 @@ main > .bouton{
     margin: 0;
 }
 
-.logo img{
+.logo img {
     width: 25px;
     height: auto;
 }
 
+
 /*----------------------------------------SALLES-------------------------------*/
 
-.salle header{
+.salle header {
     padding-bottom: 20px;
 }
 
-.polygon-salle > img{
+.polygon-salle>img {
     max-width: 500px;
     max-height: 500px;
     width: 500px;
@@ -289,93 +323,93 @@ main > .bouton{
     align-self: center;
 }
 
+@media(max-width: 1000px){
+    .polygon-salle>img{
+        width: 400px;
+        height: 400px;
+        padding-bottom: 100px;
+        position: absolute;
+    }
+}
+
 section {
     display: flex;
     padding-bottom: 40px;
 }
 
-section > p:nth-child(2){
+section>p:nth-child(2) {
     margin: 0 20px;
 }
 
-section > p{
+section>p {
     margin: 0;
 }
 
-section > p > img{
+section>p>img {
     width: 50px;
 }
 
-section > .quote:last-of-type{
+section>.quote:last-of-type {
     align-self: flex-end;
 }
 
-.salle footer{
+.salle footer {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding-top: 80px;
 }
 
-.salle footer > a:first-child{
+.salle footer>a:first-child {
     margin-right: 40px;
 }
 
+
 /*------------------------APROPOS----------------------------------------------------*/
 
-#apropos > main > .bouton{
+#apropos>main>.bouton {
     padding-bottom: 50px;
 }
 
-#apropos > main > .bouton > a{
+#apropos>main>.bouton>a {
     padding: 15px 170px;
 }
 
+
 /*----------------------------------SALLES ROUGE-----------------------------------------*/
 
-.sallerouge .bouton > a{
+.sallerouge .bouton>a {
     color: #D32F2F;
     border: solid #D32F2F 4px;
 }
 
-
-.sallerouge .bouton > a:hover{
+.sallerouge .bouton>a:hover {
     color: black;
     background-color: #D32F2F;
 }
 
+
 /*----------------------------------SALLES BLEU-------------------------------------------*/
-.sallebleu .bouton > a{
+
+.sallebleu .bouton>a {
     color: #2196f3;
     border: solid #2196f3 4px;
 }
 
-
-.sallebleu .bouton > a:hover{
+.sallebleu .bouton>a:hover {
     color: black;
     background-color: #2196f3;
 }
 
+
 /*--------------------------------------SALLES GRISES--------------------------------------------*/
 
-.sallebleu .bouton > a{
+.sallebleu .bouton>a {
     color: #BDBDBD;
     border: solid #BDBDBD 4px;
 }
 
-
-.sallebleu .bouton > a:hover{
+.sallebleu .bouton>a:hover {
     color: black;
     background-color: #BDBDBD;
 }
-
-
-
-
-
-
-
-
-
-
-
