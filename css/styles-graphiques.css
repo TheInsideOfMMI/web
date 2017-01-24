@@ -18,7 +18,7 @@ html{
     left: 0;
     background-color: black;
     overflow-x: hidden;
-    /* Désactive le scroll horizontal */
+    /* DÃ©sactive le scroll horizontal */
     transition: 0.5s ease;
     text-transform: uppercase;
 }
@@ -278,8 +278,7 @@ body.sallegrise {
 
 @media (max-width: 1000px) {
     .polygon-salle{
-        height: 100vh;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
     .polygon-salle, .polygon-accueil {
         -webkit-clip-path: none;
@@ -329,7 +328,7 @@ body.sallegrise {
     .contenu {
         width: 80%;
         height: auto;
-        padding: 0 0 200px 0;
+        padding: 0;
         justify-content: flex-end;
         margin: 0 auto;
     }
@@ -340,7 +339,7 @@ body.sallegrise {
 
 @media (max-width: 650px) {
     .contenu {
-        padding: 0 0 50px 0;
+        padding: 0;
     }
 }
 
@@ -369,11 +368,17 @@ main > .bouton {
     border: solid #ffeb3b 4px;
     padding: 15px 25px;
     transition: 0.2s ease-in-out;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 515px) {
     .polygon-salle .bouton > a{
-        height: 40px;
+        height: 30px;
+        padding: 5px 10px;
+        font-size: 0.7em;
     }
 }
 
@@ -543,12 +548,13 @@ section > .quote:last-of-type {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    /* height: 100px; */
 }
 
 @media (max-width: 1000px) {
     .salle footer {
-        padding-top: 40px;
+        /* padding-top: 40px; */
     }
 }
 
@@ -559,9 +565,6 @@ section > .quote:last-of-type {
 }
 
 @media (max-width: 650px) {
-    .salle footer {
-        padding-top: 40px;
-    }
 }
 
 .salle footer > a:first-child {
