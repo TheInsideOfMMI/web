@@ -13,7 +13,7 @@
 -Gil: You understand ? 
 -Pracht: Faites un ticket, 
 -Sandrine: Arrêtez de parler, taisez-vous
--StŽphane: Ca on s'en fout, 
+-Stephane: Ca on s'en fout, 
 -Susanne Garabedian:
 -Anne-Christine Gaber:
--Christelle Bloch:
+-Christelle Bloch: INSERT INTO personne (personne_citation) VALUES ("citation")
