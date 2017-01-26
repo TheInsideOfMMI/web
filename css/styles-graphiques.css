@@ -47,6 +47,17 @@ nav > .sidenav > .salles > ul {
 
 nav > .sidenav > .salles > ul > li {
     padding: 8px 20px 8px 20px;
+    transition: ease 0.2s;
+}
+
+nav > .sidenav > .salles > ul > li:hover{
+    transition: ease 0.2s;
+    background-color: #ffeb3b;
+}
+
+nav > .sidenav > .salles > ul > li:hover > a{
+    transition: ease 0.2s;
+    color: black;
 }
 
 .titremenu {
@@ -459,6 +470,15 @@ main > .bouton {
     margin: 0;
 }
 
+.liens > ul > li{
+    transition: ease 0.2s;
+}
+
+.liens > ul > li:hover{
+    transition: ease 0.2s;
+    transform: scale(0.8);
+}
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -569,17 +589,18 @@ section > .quote:last-of-type {
     }
 }
 
-@media (max-width: 650px) {
-}
-
 .salle footer > a:first-child {
     margin-right: 40px;
+}
+
+#apropos footer p{
+    margin: 0;
 }
 
 /*------------------------APROPOS----------------------------------------------------*/
 
 #apropos > main > .bouton {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 #apropos > main > .bouton > a {
