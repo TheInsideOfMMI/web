@@ -3,13 +3,13 @@ body, html {
     padding: 0;
 }
 
-html{
+html {
     overflow-y: scroll;
 }
 
 /*------------------------------------MENU-----------------------------------------------*/
 
-nav > span{
+nav > span {
     position: fixed;
     z-index: 1;
 }
@@ -50,12 +50,12 @@ nav > .sidenav > .salles > ul > li {
     transition: ease 0.2s;
 }
 
-nav > .sidenav > .salles > ul > li:hover{
+nav > .sidenav > .salles > ul > li:hover {
     transition: ease 0.2s;
     background-color: #ffeb3b;
 }
 
-nav > .sidenav > .salles > ul > li:hover > a{
+nav > .sidenav > .salles > ul > li:hover > a {
     transition: ease 0.2s;
     color: black;
 }
@@ -120,8 +120,8 @@ body {
     position: relative;
 }
 
-@media(min-width: 1000px){
-    body{
+@media (min-width: 1000px) {
+    body {
         height: 100vh;
     }
 }
@@ -199,7 +199,7 @@ body.sallegrise {
         background-size: contain !important;
     }
 
-    .mmi{
+    .mmi {
         background-size: auto 40%;
         background-position-y: -90px !important;
         background-position-x: -70px !important;
@@ -278,24 +278,25 @@ body.sallegrise {
     justify-content: flex-end;
 }
 
-@media(min-width: 1200px) and (max-width: 1400px){
-    .polygon-accueil{
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .polygon-accueil {
         -webkit-clip-path: polygon(100% -320%, 30% 130%, 100% 100%);
         clip-path: polygon(100% -320%, 30% 130%, 100% 100%);
     }
 }
 
-@media(min-width: 1000px) and (max-width: 1200px){
-    .polygon-accueil{
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .polygon-accueil {
         -webkit-clip-path: polygon(100% -500%, 30% 130%, 100% 100%);
         clip-path: polygon(100% -500%, 30% 130%, 100% 100%);
     }
 }
 
 @media (max-width: 1000px) {
-    .polygon-salle{
+    .polygon-salle {
         padding-bottom: 40px;
     }
+
     .polygon-salle, .polygon-accueil {
         -webkit-clip-path: none;
         clip-path: none;
@@ -348,7 +349,8 @@ body.sallegrise {
         justify-content: flex-end;
         margin: 0 auto;
     }
-    .mmi .contenu{
+
+    .mmi .contenu {
         padding: 50px 0;
     }
 }
@@ -364,12 +366,12 @@ nav {
     justify-content: space-between;
 }
 
-@media(max-width: 1000px){
-    nav{
+@media (max-width: 1000px) {
+    nav {
         height: 60px;
     }
 
-    .mmi nav{
+    .mmi nav {
         height: 300px;
     }
 }
@@ -391,24 +393,25 @@ main > .bouton {
 }
 
 @media (max-width: 515px) {
-    .polygon-salle .bouton > a{
+    .polygon-salle .bouton > a {
         height: 30px;
         padding: 5px 10px;
         font-size: 0.7em;
     }
 }
 
-@media(max-width: 620px){
-    .mmi .bouton{
+@media (max-width: 620px) {
+    .mmi .bouton {
         flex-direction: column;
         align-items: center;
     }
-    .mmi .bouton > a{
+
+    .mmi .bouton > a {
         width: 250px;
         text-align: center;
     }
 
-    .mmi .bouton > a:first-child{
+    .mmi .bouton > a:first-child {
         margin-bottom: 20px;
     }
 }
@@ -425,18 +428,20 @@ main > .bouton {
     padding-top: 20px;
 }
 
-@media(max-width: 1000px){
-    .mmi .bouton{
+@media (max-width: 1000px) {
+    .mmi .bouton {
         padding-bottom: 40px;
     }
 
-    #credits{
+    #credits {
         flex-direction: column;
     }
-    #theo{
+
+    #theo {
         margin-bottom: 20px;
     }
-    #elo, #theo{
+
+    #elo, #theo {
         justify-content: center;
     }
 }
@@ -470,11 +475,11 @@ main > .bouton {
     margin: 0;
 }
 
-.liens > ul > li{
+.liens > ul > li {
     transition: ease 0.2s;
 }
 
-.liens > ul > li:hover{
+.liens > ul > li:hover {
     transition: ease 0.2s;
     transform: scale(0.8);
 }
@@ -559,8 +564,8 @@ section > p > img {
     width: 50px;
 }
 
-@media(max-width: 1000px){
-    section > p > img{
+@media (max-width: 1000px) {
+    section > p > img {
         width: 30px;
     }
 }
@@ -593,7 +598,7 @@ section > .quote:last-of-type {
     margin-right: 40px;
 }
 
-#apropos footer p{
+#apropos footer p {
     margin: 0;
 }
 
@@ -608,12 +613,70 @@ section > .quote:last-of-type {
 }
 
 @media (max-width: 1000px) {
-    #apropos > main > .bouton > a{
+    #apropos > main > .bouton > a {
         padding: 15px 0;
     }
-    #apropos > main > .bouton{
+
+    #apropos > main > .bouton {
         padding-bottom: 20px;
     }
+}
+
+/*----------------------------------GALERIE------------------------------------------------------*/
+#galerie{
+    background-color: black;
+}
+
+#galerie > main > h1{
+    text-align: center;
+    padding: 50px 0;
+}
+
+@media(max-width: 400px){
+    #galerie > main > h1{
+        font-size: 2.5em;
+    }
+}
+
+#galerie nav > span > a > img{
+    margin: 0;
+}
+
+#galerie > main > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+#galerie > main > ul > li{
+    width: calc(25% - 4px);
+    margin-right: 4px;
+}
+
+@media(max-width: 1000px) and (min-width: 800px){
+    #galerie > main > ul > li{
+        width: calc(33.3% - 4px);
+    }
+}
+
+@media(max-width: 800px) and (min-width: 600px){
+    #galerie > main > ul > li{
+        width: calc(50% - 4px);
+    }
+}
+
+@media(max-width: 600px){
+    #galerie > main > ul > li{
+        width: 100%;
+    }
+}
+
+#galerie > main > ul > li > a > img{
+    width: 100%;
 }
 
 /*----------------------------------SALLES ROUGE-----------------------------------------*/
