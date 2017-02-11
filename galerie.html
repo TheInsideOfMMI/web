@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/lightgallery.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/lightgallery.js"></script>
+    <script src="js/lg-share.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet'
           type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -71,19 +72,23 @@
 
     <ul id="lightGallery" class="gallery">
         <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
-        <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
-        <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
-        <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
-        <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
-        <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
-        <li data-sub-html="<h3>Entrée du département</h3><p>Vous pourrez vous rendre en cours et au secrétariat</p>" data-src="images_interface/fond_entree_mmi.jpg">
-            <a href="#"><img src="images_interface/fond_entree_mmi.jpg" alt="Entrée du département MMI" ></a></li>
+            <a href="#"><img src="images_contenu/fond_entree_mmi_min.jpg" alt="Entrée du département MMI" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/hall.jpg">
+            <a href="#"><img src="images_contenu/hall_min.jpg" alt=""></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/hall_2.jpg">
+            <a href="#"><img src="images_contenu/hall2_min.jpg" alt="" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/hall3.jpg">
+            <a href="#"><img src="images_contenu/hall3_min.jpg" alt="" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/hall_4.jpg">
+            <a href="#"><img src="images_contenu/hall4_min.jpg" alt="" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/banc_etage.jpg">
+            <a href="#"><img src="images_contenu/banc_etage_min.jpg" alt="" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/escaliers.jpg">
+            <a href="#"><img src="images_contenu/escaliers_min.jpg" alt="" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/hall_amphi.jpg">
+            <a href="#"><img src="images_contenu/hall_amphi_min.jpg" alt="" ></a></li>
+        <li data-sub-html="<h3></h3><p></p>" data-src="images_contenu/machines.jpg">
+            <a href="#"><img src="images_contenu/machines_min.jpg" alt="" ></a></li>
 
     </ul>
 </main>
@@ -125,7 +130,7 @@
 
 // Navigation
             hideControlOnEnd : false, // If true, prev/next button will be hidden on first/last image.
-            loop : false, // Allows to go to the other end of the gallery at first/last img.
+            loop : true, // Allows to go to the other end of the gallery at first/last img.
             auto : false, // Enables slideshow mode.
             pause : 4000, // Delay (in ms) between transitions in slideshow mode.
             escKey : true, // Whether lightGallery should be closed when user presses "Esc".

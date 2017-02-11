@@ -830,6 +830,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   top: 0;
   bottom: 0;
+  background-color: black;
 }
 .lg-outer .lg-item.lg-complete {
   background-image: none;
