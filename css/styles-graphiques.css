@@ -74,9 +74,13 @@ nav > .sidenav > .salles > ul > li:hover > a {
 
 .titremenu {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     align-items: center;
+    -webkit-align-items: center;
     padding: 25px 0 50px 0;
 }
 
@@ -88,6 +92,7 @@ nav > .sidenav > .salles > ul > li:hover > a {
 
 .titremenu > a {
     display: flex;
+    display: -webkit-flex;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -275,7 +280,9 @@ body.sallegrise {
     height: 100%;
     background: black;
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 }
 
 .polygon-salle {
@@ -287,7 +294,9 @@ body.sallegrise {
     height: 100%;
     background: black;
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -314,6 +323,7 @@ body.sallegrise {
         clip-path: none;
         position: relative;
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
 }
 
@@ -322,13 +332,16 @@ body.sallegrise {
         -webkit-clip-path: polygon(130% -260%, 10% 130%, 120% 100%);
         clip-path: polygon(130% -260%, 10% 130%, 120% 100%);
         align-items: flex-end;
+        -webkit-align-items: flex-end;
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
 }
 
 @media (max-width: 650px) {
     .polygon-salle, .polygon-accueil {
         justify-content: center;
+        -webkit-justify-content: center;
     }
 }
 
@@ -337,8 +350,11 @@ body.sallegrise {
     height: 100%;
     padding-right: 120px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -359,6 +375,7 @@ body.sallegrise {
         height: auto;
         padding: 0;
         justify-content: flex-end;
+        -webkit-justify-content: flex-end;
         margin: 0 auto;
     }
 
@@ -375,7 +392,9 @@ body.sallegrise {
 
 nav {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 @media (max-width: 1000px) {
@@ -391,7 +410,9 @@ nav {
 main > .bouton {
     padding: 20px 0;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .bouton > a {
@@ -400,8 +421,11 @@ main > .bouton {
     transition: 0.2s ease-in-out;
     height: 20px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 @media (max-width: 515px) {
@@ -415,7 +439,9 @@ main > .bouton {
 @media (max-width: 620px) {
     .mmi .bouton {
         flex-direction: column;
+        -webkit-flex-direction: column;
         align-items: center;
+        -webkit-align-items: center;
     }
 
     .mmi .bouton > a {
@@ -436,7 +462,9 @@ main > .bouton {
 
 #credits {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     padding-top: 20px;
 }
 
@@ -447,6 +475,7 @@ main > .bouton {
 
     #credits {
         flex-direction: column;
+        -webkit-flex-direction: column;
     }
 
     #theo {
@@ -470,12 +499,16 @@ main > .bouton {
 
 #elo, #theo {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
 }
 
 #elo > ul, #theo > ul {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     padding-left: 10px;
 }
 
@@ -498,8 +531,11 @@ main > .bouton {
 
 .logo {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     padding: 8px 0 0 0;
     margin: 0;
 }
@@ -522,6 +558,7 @@ main > .bouton {
     height: auto;
     padding-right: 100px;
     align-self: center;
+    -webkit-align-self: center;
 }
 
 @media (min-width: 1000px) and (max-width: 1600px) {
@@ -555,6 +592,7 @@ main > .bouton {
 
 section {
     display: flex;
+    display: -webkit-flex;
     padding-bottom: 40px;
 }
 
@@ -584,21 +622,19 @@ section > p > img {
 
 section > .quote:last-of-type {
     align-self: flex-end;
+    -webkit-align-self: flex-end;
 }
 
 .salle footer {
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
     width: 100%;
     /* padding-top: 80px; */
     /* height: 100px; */
 }
 
-@media (max-width: 1000px) {
-    .salle footer {
-        /* padding-top: 40px; */
-    }
-}
 
 @media (min-width: 1000px) and (max-width: 1200px) {
     .salle footer {
@@ -659,7 +695,9 @@ section > .quote:last-of-type {
     padding: 0;
     list-style-type: none;
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
