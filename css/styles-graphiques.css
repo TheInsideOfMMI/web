@@ -217,8 +217,7 @@ body.sallegrise {
     }
 
     .mmi {
-        background-size: auto 40%;
-        background-position-y: -90px !important;
+        background-position-y: -220px !important;
         background-position-x: -70px !important;
     }
 }
@@ -299,6 +298,90 @@ body.sallegrise {
     -webkit-justify-content: flex-end;
 }
 
+#conteneur-polygon, #conteneur-salle{
+    display: none;
+}
+
+@-moz-document url-prefix() {
+    #conteneur-polygon, #conteneur-salle{
+        display: block !important;
+    }
+
+    .polygon-salle{
+        -webkit-clip-path: url("#clipping");
+        clip-path: url("#clipping");
+    }
+
+    .polygon-accueil{
+        -webkit-clip-path: url("#clipping");
+        clip-path: url("#clipping");
+    }
+
+    #conteneur-polygon{
+        border-bottom: 420px solid;
+        border-left: 1000px solid;
+        height: 100%;
+        width: 100%;
+    }
+
+    #conteneur-salle{
+        border-bottom: 420px solid;
+        border-left: 1000px solid;
+        height: 100%;
+        width: 100%;
+    }
+
+    @media (max-width: 1200px){
+        #conteneur-salle{
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1000px){
+        .contenu > main{
+            width: 100% !important;
+        }
+
+        #conteneur-polygon{
+            display: none !important;
+        }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1600px) {
+        .polygon-salle > img {
+            min-width: 300px;
+        }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1200px) {
+        #conteneur-salle{
+            border-left: 1000px solid;
+        }
+
+        .contenu{
+            padding: 0 50px 0 0 !important;
+        }
+
+        .contenu > main{
+            width: 400px;
+        }
+
+        .polygon-salle{
+            -webkit-flex-direction: row !important;
+            flex-direction: row !important;
+        }
+
+        .polygon-salle > img{
+            padding: 50px 100px 0 250px !important;
+        }
+    }
+
+    .contenu > main{
+        width: 600px;
+    }
+}
+
+
 @media (min-width: 1200px) and (max-width: 1400px) {
     .polygon-accueil {
         -webkit-clip-path: polygon(100% -320%, 30% 130%, 100% 100%);
@@ -329,12 +412,12 @@ body.sallegrise {
 
 @media (min-width: 1000px) and (max-width: 1200px) {
     .polygon-salle {
-        -webkit-clip-path: polygon(130% -260%, 10% 130%, 120% 100%);
-        clip-path: polygon(130% -260%, 10% 130%, 120% 100%);
+        -webkit-clip-path: polygon(0% -260%, 0% 100%, 140% 100%);
+        clip-path: polygon(0% -260%, 0% 100%, 140% 100%);
         align-items: flex-end;
         -webkit-align-items: flex-end;
-        flex-direction: column;
-        -webkit-flex-direction: column;
+        flex-direction: row;
+        -webkit-flex-direction: row;
     }
 }
 
@@ -359,13 +442,17 @@ body.sallegrise {
 
 @media (min-width: 1200px) and (max-width: 1600px) {
     .contenu {
-        padding-right: 50px;
+        padding-right: 100px;
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
     .contenu {
-        padding: 0 50px 50px 0;
+        padding: 0 50px 0 0;
+    }
+
+    .contenu > main{
+        width: 550px;
     }
 }
 
@@ -468,14 +555,23 @@ main > .bouton {
     padding-top: 20px;
 }
 
+@media (max-width: 655px) {
+    #credits {
+        flex-direction: column !important;
+        -webkit-flex-direction: column !important;
+    }
+}
+
 @media (max-width: 1000px) {
     .mmi .bouton {
         padding-bottom: 40px;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
     }
 
     #credits {
-        flex-direction: column;
-        -webkit-flex-direction: column;
+        flex-direction: row;
+        -webkit-flex-direction: row;
     }
 
     #theo {
@@ -566,13 +662,14 @@ main > .bouton {
         padding-right: 50px;
         max-width: 300px;
         max-height: 300px;
+        min-width: 300px;
         width: 300px;
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
     .polygon-salle > img {
-        padding: 50px 0 0 250px;
+        padding: 50px 100px 0 250px;
     }
 }
 
